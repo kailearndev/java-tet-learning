@@ -3,12 +3,11 @@ server:
   servlet:
     context-path: /identity
 
-
 spring:
   datasource:
     url: "jdbc:mysql://localhost:3306/identity_service"
-    username: root
-    password: Kuluan12@
+    username: ${DB_USERNAME}  # ??c bi?n môi tr??ng DB_USERNAME
+    password: ${DB_PASSWORD}  # ??c bi?n môi tr??ng DB_PASSWORD
   jpa:
     hibernate:
       ddl-auto: update
